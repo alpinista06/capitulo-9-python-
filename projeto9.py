@@ -21,8 +21,8 @@ def Preenchendo(prefixo, extensao, caminho=""):
         if arquivo.endswith(extensao):
             mo = regex.search(arquivo)
             if mo != None:
-                c = mo.group(0)
-                numList.append(c)
+                #c = mo.group(0)
+                #numList.append(c)
                 renomeado = prefixo + str(a).zfill(l) + extensao
                 shutil.move(arquivo, renomeado)
                 numList.append(renomeado)
